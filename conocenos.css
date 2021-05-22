@@ -1,0 +1,288 @@
+body{
+	font-family: arial;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+/*****************************************************
+			Información de contacto header
+*******************************************************/
+
+
+.fonts{
+	text-align: right;
+	margin: 0;
+	padding: 0;
+	margin-right: 10px;
+}
+
+.fonts .divison ul li{
+	list-style: none;
+	display: inline-block;
+	margin-right: 10px;
+}
+
+.fonts .divison ul li a{
+	color: black;
+	padding-left: 10px;
+	font-size: 15px;
+	text-decoration: none;
+	transition: 200ms all ease-out;
+}
+
+.fonts .divison ul li a h1{
+	font-family: fantasy;
+	margin: 0;
+	padding: 0;
+	font-size: 15px;
+	font-family: 'Raleway', sans-serif;
+	text-decoration: none;
+}
+
+.fonts .divison ul li a:hover{
+	color: #8D0DE6;
+}
+/****************************************
+    Bar Navegation / Barra de Navegación 
+****************************************/
+
+.nav{
+    border-bottom: 1px solid #66D7D1;
+    text-align: center;
+    height: 70px;
+    width: 100%;
+    line-height: 70px;
+    background: #66D7D1;
+    position: relative;
+}
+
+.menu {
+    margin: 0 30px 0 0;
+}
+
+.menu a{
+    text-decoration: none;
+    color: #5C5A5A;
+    margin:  0 10px;
+    font-family: 'Raleway', sans-serif;
+    clear: right;
+    line-height: 70px;
+    transition: 200ms all ease-out;
+}
+
+label {
+    margin: 0 40px 0 0;
+    font-size: 26px;
+    line-height: 70px;
+    display: none;
+    color: white;
+    width: 26px;
+    float: right;
+}
+
+#toggle {
+    display: none;
+    color: white;
+}
+
+.menu a:hover{
+	color: white;
+}
+
+/******************************************
+			Titulo nuevo 
+*******************************************/
+.title{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.title .type-text{
+    text-align: center;
+}
+
+.title .type-text h1{
+	font-family: 'Pattaya', sans-serif;
+	color: #8D0DE6;
+	letter-spacing: 5px;
+	font-size: 70px;
+} 
+
+/**********************************************
+			Conocenos
+**********************************************/
+.Merch{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3em;
+    margin-bottom: 3em;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+}
+
+.MerchContent{
+	border-radius: 10px;
+    background: #DED9D9;
+    cursor: pointer;
+    max-width: 100%;
+    box-shadow: 0 0 5px 0 rgba(0,0,0,.095);
+    transition: all 300ms;
+}
+
+.item-text{
+    padding: 1em;
+}
+
+.MerchContent:hover{
+    transform: scale(1.05);
+}
+
+.item-img{
+    max-width: 100%;
+    border-radius: 10px;
+    display: block;
+}
+
+.valor .valores{
+	display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3em;
+    margin-bottom: 3em;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+}
+
+.valor .valores .valors{
+	border-radius: 10px;
+    background: #DED9D9;
+    cursor: pointer;
+    max-width: 100%;
+    box-shadow: 0 0 5px 0 rgba(0,0,0,.095);
+    transition: all 300ms;
+}
+
+.valor .valores .valors img{
+	max-width: 100%;
+	border-radius: 10px;
+	display: block;
+}
+
+.valor .valores .valors p{
+	text-align: center;
+}
+.valor .valores .valors:hover{
+    transform: scale(1.05);
+}
+
+.title-valor{
+	background: #66D7D1;
+	width: 100%;
+}
+
+.title-valor h1{
+	padding: 10px;
+	text-align: center;
+	font-family: 'Pattaya', sans-serif;
+	font-size: 40px;
+	color: white;
+	letter-spacing: 5px;
+}
+/******************************************
+			FOOTER
+******************************************/
+
+footer{
+	background: #66D7D1;
+	display: flex;
+    width: 100%;
+    height: 20vh;
+    justify-content: center;
+    align-items: center;
+    padding-top: 3vh;
+}
+
+footer .copy{
+	text-align: center;
+}
+
+footer .copy h1{
+	font-size: 20px;
+}
+
+footer .direccion ul li{
+	list-style: none;
+	display: inline-block;
+}
+
+footer .direccion ul li span{
+	color: white;
+}
+
+@media only screen and (max-width: 800px){
+.nav{
+        background: #66D7D1;
+    }
+
+    label{
+        display: block;
+        cursor: pointer;
+    }
+    #toggle{
+        color: white;
+        font-size: 30px; 
+    }
+    .menu {
+        text-align: center;
+        width: 100%;
+        display: none;
+        background: #66D7D1;
+    }
+    .menu a{
+        display: block;
+        border-bottom: 1px solid #EAEAEB;
+        margin: 0;
+        color: white;
+    }
+
+    .menu a:hover{
+        color: rgba(220,220,220,220.5);
+        transition: 300ms all ease-out;
+    }
+
+    #toggle:checked + .menu{
+        display: block;
+        transition: 300ms all ease-out;
+    }
+    .title .type-text{
+    	text-align: center;
+    }
+    .Merch{
+    	display: grid;
+    	grid-template-columns: repeat(1, 1fr);
+    	width: 80%;
+    	margin-left: auto;
+    	margin-right: auto;
+    	margin-top: 3em;
+    	margin-bottom: 3em;
+    	grid-template-columns: repeat(1, 1fr);
+    	grid-gap: 30px;
+	}
+	.valor .valores{
+	display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3em;
+    margin-bottom: 3em;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 30px;
+}
+
+}
